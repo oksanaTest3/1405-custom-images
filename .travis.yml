@@ -1,8 +1,17 @@
-#test
 os: linux
 language: generic
 dist: focal
 
-vm:
-  use:
-    name: custom-image-repo
+jobs:
+  include:
+    - stage: create image
+      name: "Job 1 – Create image"
+      vm:
+        create:
+          name: conflict-test-image
+
+    - stage: create image
+      name: "Job 2 – Create image"
+      vm:
+        create:
+          name: conflict-test-image
