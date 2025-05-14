@@ -7,7 +7,7 @@ jobs:
       name: "Job 1 – Create image"
       vm:
         create:
-          name: conflict-test-image
+          name: conflict-test-image1
 
     - stage: create image
       name: "Job 2 – Create image"
@@ -16,4 +16,4 @@ jobs:
       dist: bionic
       vm:
         create:
-          name: conflict-test-image
+          name: conflict-test-image2
