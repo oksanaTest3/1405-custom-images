@@ -8,10 +8,4 @@ jobs:
       name: "Job 1 – Create image"
       vm:
         create:
-          name: conflict-test-image
-
-    - stage: create image
-      name: "Job 2 – Create image"
-      vm:
-        create:
-          name: conflict-test-image
+          name: test-image
