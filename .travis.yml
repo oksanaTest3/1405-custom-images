@@ -8,4 +8,4 @@ jobs:
       name: "Job 1 – Create image"
       vm:
         create:
-          name: test-image
+          name: test-image1
