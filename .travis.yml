@@ -1,19 +1,8 @@
-jobs:
-  include:
-    - stage: create image
-      os: linux
-      language: generic
-      dist: focal
-      name: "Job 1 – Create image"
-      vm:
-        create:
-          name: conflict-test-image1
+#test2
+os: linux
+language: generic
+dist: focal
 
-    - stage: create image
-      name: "Job 2 – Create image"
-      os: linux
-      language: generic
-      dist: bionic
-      vm:
-        create:
-          name: conflict-test-image2
+vm:
+  use:
+    name: custom-image-repo
